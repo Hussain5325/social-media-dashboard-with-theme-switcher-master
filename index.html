@@ -2,86 +2,221 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
   <title>Frontend Mentor | [Challenge Name Here]</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
+  <div class="container">
 
-  Social Media Dashboard
-  Total Followers: 23,004
+    <div class="top-colored-container"></div>
 
-  Dark Mode
+    <div class="small_container">
 
-  
+      <div class="header">
 
-  @nathanf
-  1987
-  Followers
-  12 Today
+        <div class="info">
+          <h1 class="heading">Social Media Dashboard</h1>
+          <p class="total-followers">Total Followers: 23,004</p>
+        </div>
 
-  @nathanf
-  1044
-  Followers
-  99 Today
+        <div class="darkmode-container">
+          <label for="checkbox">Dark Mode</label>
+          <input type="checkbox" id="checkbox">
+          <label for="checkbox" id="label"></label>
+        </div>
 
-  @realnathanf
-  11k
-  Followers
-  1099 Today
+      </div>
 
-  Nathan F.
-  8239
-  Subscribers
-  144 Today
+      <div class="first_grid_container">
 
+        <div class="first-grid-items">
 
+          <p class="social">
+            <img src="images/icon-facebook.svg">
+            @nathanf</p>
+          <h1 class="num">1987</h1>
+          <p class="followers">F o l l o w e r s</p>
+          <p class="time_left">
+            <img src="images/icon-up.svg">
+            12 Today</p>
 
-  Overview - Today
+        </div>
 
-  Page Views
-  87
-  3%
+        <div class="first-grid-items">
 
-  Likes
-  52
-  2%
+          <p class="social">
+            <img src="images/icon-facebook.svg">
+            @nathanf</p>
+          <h1 class="num">1044</h1>
+          <p class="followers">F o l l o w e r s</p>
+          <p class="time_left">
+            <img src="images/icon-up.svg">
+            99 Today</p>
 
-  Likes
-  5462
-  2257%
+        </div>
 
-  Profile Views
-  52k
-  1375%
+        <div class="first-grid-items">
+          
+          <p class="social">
+            <img src="images/icon-twitter.svg">
+            @realnathanf</p>
+          <h1 class="num">11k</h1>
+          <p class="followers">F o l l o w e r s</p>
+          <p class="time_left">
+            <img src="images/icon-up.svg">
+            1099 Today</p>
 
-  Retweets
-  117
-  303%
+        </div>
 
-  Likes
-  507
-  553%
+        <div class="first-grid-items">
 
-  Likes
-  107
-  19%
+          <p class="social">
+            <img src="images/icon-youtube.svg">
+            Nathan F.</p>
+          <h1 class="num">8239</h1>
+          <p class="followers">S u b s c r i b e r s</p>
+          <p class="time_left">
+            <img src="images/icon-down.svg">
+            144 Today</p>
 
-  Total Views
-  1407
-  12%
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+        </div>
+
+      </div>
+
+      <h1 class="sec-heading">Overview - Today</h1>
+
+      <div class="sec-grid-container">
+
+        <div class="sec-grid-items">
+
+          <p class="title">Page Views
+            <img src="images/icon-facebook.svg" class="images">
+          </p>
+
+          <div class="last">
+            <h1 class="big-num">87</h1>
+            <p class="persentage">
+              <img src="images/icon-up.svg">
+              3%
+            </p>
+          </div>
+
+        </div>
+
+        <div class="sec-grid-items">
+          
+          <p class="title">Likes
+            <img src="images/icon-facebook.svg" class="images">
+          </p>
+
+          <div class="last">
+            <h1 class="big-num">52</h1>
+            <p class="persentage red">
+              <img src="images/icon-down.svg">
+              2%
+            </p>
+          </div>
+
+        </div>
+
+        <div class="sec-grid-items">
+
+          <p class="title">Likes
+            <img src="images/icon-instagram.svg" class="images">
+          </p>
+
+          <div class="last">
+            <h1 class="big-num">5462</h1>
+            <p class="persentage">
+              <img src="images/icon-up.svg">
+              2257%
+            </p>
+          </div>
+
+        </div>
+
+        <div class="sec-grid-items">
+          
+          <p class="title">Profile Views
+            <img src="images/icon-instagram.svg" class="images">
+          </p>
+
+          <div class="last">
+            <h1 class="big-num">52k</h1>
+            <p class="persentage">
+              <img src="images/icon-up.svg">
+              1375%
+            </p>
+          </div>
+
+        </div>
+
+        <div class="sec-grid-items">
+
+          <p class="title">Retweets
+            <img src="images/icon-twitter.svg" class="images">
+          </p>
+          <div class="last">
+            <h1 class="big-num">117</h1>
+            <p class="persentage">
+              <img src="images/icon-up.svg">
+              303%
+            </p>
+          </div>
+
+        </div>
+
+        <div class="sec-grid-items">
+          
+          <p class="title">Likes
+            <img src="images/icon-twitter.svg" class="images">
+          </p>
+          <div class="last">
+            <h1 class="big-num">507</h1>
+            <p class="persentage">
+              <img src="images/icon-up.svg">
+              553%
+            </p>
+          </div>
+
+        </div>
+
+        <div class="sec-grid-items">
+                    
+          <p class="title">Likes
+            <img src="images/icon-youtube.svg" class="images">
+          </p>
+          <div class="last">
+            <h1 class="big-num">107</h1>
+            <p class="persentage red">
+              <img src="images/icon-down.svg">
+              19%
+            </p>
+          </div>
+
+        </div>
+
+        <div class="sec-grid-items">
+          
+          <p class="title">Total Views
+            <img src="images/icon-youtube.svg" class="images">
+          </p>
+          <div class="last">
+            <h1 class="big-num">1407</h1>
+            <p class="persentage red">
+              <img src="images/icon-down.svg">
+              12%
+            </p>
+          </div>
+        </div>
+
+      </div>
+      
+    </div>
+
   </div>
 </body>
 </html>
